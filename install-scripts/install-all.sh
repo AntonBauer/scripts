@@ -2,11 +2,13 @@
 sudo apt-get update
 sudo apt update
 
-./curl-install.sh
-./pass-install.sh
-./git-install.sh
-./github-cli-install.sh
-./ripgrep-install.sh
-./nvim-install.sh
-./proton-vpn-install.sh
-./dotnet-install.sh
+BASEDIR=$(dirname $0)
+
+$BASEDIR/curl-install.sh
+$BASEDIR/pass-install.sh
+$BASEDIR/git-install.sh
+$BASEDIR/github-cli-install.sh
+$BASEDIR/ripgrep-install.sh
+$BASEDIR/nvim-install.sh
+$BASEDIR/proton-vpn-install.sh
+$BASEDIR/dotnet-install.sh

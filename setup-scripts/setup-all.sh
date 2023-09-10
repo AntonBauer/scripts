@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-./trackball-setup.sh
-./vpn-setup.sh
+BASEDIR=$(dirname $0)
+
+$BASEDIR/trackball-setup.sh
+$BASEDIR/vpn-setup.sh
