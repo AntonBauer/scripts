@@ -9,6 +9,7 @@ $BASEDIR/pass-install.sh
 $BASEDIR/git-install.sh
 $BASEDIR/github-cli-install.sh
 $BASEDIR/ripgrep-install.sh
+$BASEDIR/nerd-fonts-install.sh
 $BASEDIR/nvim-install.sh
 $BASEDIR/proton-vpn-install.sh
 $BASEDIR/dotnet-install.sh
