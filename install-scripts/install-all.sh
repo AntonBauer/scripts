@@ -4,6 +4,7 @@ sudo apt update
 
 BASEDIR=$(dirname $0)
 
+$BASEDIR/podman-install.sh
 $BASEDIR/curl-install.sh
 $BASEDIR/pass-install.sh
 $BASEDIR/git-install.sh
