@@ -24,4 +24,4 @@ delete_converted=$8
 podman run -it --rm -v $raw_files_folder:/audios whisper.cpp:main "ffmpeg -i /audios/$file_to_transcribe -ar 16000 -ac 1 -c:a pcm_s16le /audios/$converted_file_name"
 
 # run whisper container on converted audio
-podman run -it --rm -v $models_folder:/models -v $raw_files_folder:/audios whisper.cpp:main "./main -m /models/$model_name -f /audios/$converted_file_name -l $language"
+podman run -it --rm -v $models_folder:/models -v $raw_files_folder:/audios whisper.cpp:main "./main -m /models/$model_name -f /audios/$converted_file_name -l $language -otxt"
